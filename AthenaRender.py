@@ -32,4 +32,4 @@ try:
 except:
     sampling = str(300)
 
-os.system(to_dir+'/blender -b \"' +name+'\" -o //renders/'+os.path.basename(os.path.splitext(name)[0])+' -t 8 -P RenderSettings.py -- '+anim+' '+sampling)
+os.system(to_dir+'/blender -b \"' +name+'\" -o //renders/'+os.path.basename(os.path.splitext(name)[0])+' -P RenderSettings.py -- '+anim+' '+sampling)
