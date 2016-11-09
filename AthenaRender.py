@@ -10,7 +10,7 @@ current_dir = os.getcwd()
 list_dir = [d for d in os.listdir('.') if ((os.path.isdir(d)) and (not d.startswith('.')))]
 print (list_dir)
 
-for directory in list_dir[1:]:
+for directory in list_dir:
     if ('blender' in os.listdir(directory)):
         to_dir = directory
         break
