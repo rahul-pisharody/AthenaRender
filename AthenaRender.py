@@ -1,5 +1,4 @@
-import sys
-import os
+import sys, os
 #testing_alpha
 
 #Change Current Working directory to Path of Script
@@ -8,7 +7,8 @@ os.chdir(to_dir)
 current_dir = os.getcwd()
 
 #Find the Blender executable
-list_dir = [d for d in os.listdir('.') if (os.path.isdir(d))]
+list_dir = [d for d in os.listdir('.') if ((os.path.isdir(d)) and (not d.startswith('.')))]
+print (list_dir)
 
 for directory in list_dir[1:]:
     if ('blender' in os.listdir(directory)):
