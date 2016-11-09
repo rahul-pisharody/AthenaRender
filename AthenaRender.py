@@ -8,7 +8,7 @@ os.chdir(to_dir)
 current_dir = os.getcwd()
 
 #Find the Blender executable
-list_dir = [d for d in os.listdir('.') if (os.path.isdir(d) and ('$.' not in d))]
+list_dir = [d for d in os.listdir('.') if (os.path.isdir(d))]
 
 for directory in list_dir[1:]:
     if ('blender' in os.listdir(directory)):
