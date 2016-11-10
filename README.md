@@ -1,6 +1,5 @@
-Script to Render .blend files on Athena
 
-Blender Render on the NITC Athena Server
+Blender Cycles Render on the NITC Athena Server
 
 First, download, extract and copy the Blender folder (Linux) to your account.
 
